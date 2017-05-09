@@ -1,0 +1,23 @@
+---
+- include: variable-check.yml
+  vars:
+    playbook: rollback.yml
+
+- name: Test Connection
+  hosts: web:&{{ env }}
+  gather_facts: false
+  vars:
+    dynamic_user: false
+  roles:
+    - { role: connection, tags: [connection, always] }
+
+- name: Rollback a Deploy
+  hosts: web:&{{ env }}
+  remote_user: "{{ web_user }}"
+
+  vars:
+    project_root: "{{ www_root }}/{{ site }}"
+    project_current_path: "{{ wordpress_sites[site].current_path | default('current') }}"
+
+  roles:
+    - rollback
