@@ -10,7 +10,7 @@ vault_users:
 # Variables to accompany `group_vars/production/wordpress_sites.yml`
 # Note: the site name (`example.com`) must match up with the site name in the above file.
 vault_wordpress_sites:
-  example.com:
+  built-with-roots.online:
     env:
       db_password: example_dbpassword
       # Generate your keys here: https://roots.io/salts.html
