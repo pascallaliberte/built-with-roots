@@ -397,7 +397,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-to-rest-api.2.2.1.zip",
-                "reference": null,
+                "reference": "tags/2.2.1",
                 "shasum": null
             },
             "require": {
