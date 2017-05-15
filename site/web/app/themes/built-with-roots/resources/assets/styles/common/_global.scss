@@ -1,0 +1,36 @@
+html {
+  background-color: $brand-gray-light;
+}
+
+body {
+  font-family: $font-sans;
+  color: $brand-primary;
+  margin: 50px 30px;
+  background-color: inherit;
+}
+
+a {
+  text-decoration: underline;
+}
+
+small.footer {
+  color: $brand-gray-dark;
+  a {
+    color: inherit;
+    &:hover {
+      color: darken($brand-gray-dark, 10%);
+    }
+  }
+}
+
+// https://github.com/wilddeer/stickyfill
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
+}

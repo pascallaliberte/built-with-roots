@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="253" height="162" viewBox="0 0 253 162">
+  <g fill="none" fill-rule="evenodd" transform="translate(-5 -8)">
+    <text fill="#48E3E3" font-family="Futura-CondensedExtraBold, Futura" font-size="60" font-style="condensed" font-weight="700">
+      <tspan x="2" y="60">BUILT</tspan>
+    </text>
+    <text fill="#48E3E3" font-family="FreightSansProMedium-Italic, FreightSans Pro" font-size="34" font-style="italic" font-weight="500">
+      <tspan x="156" y="36">using </tspan> <tspan x="156" y="65">the</tspan>
+    </text>
+    <text fill="#48E3E3" font-family="FreightSansProMedium-Regular, FreightSans Pro" font-size="34" font-weight="400">
+      <tspan x="3" y="166">kit for Wordpress</tspan>
+    </text>
+    <text fill="#F300BC" font-family="Futura-Bold, Futura" font-size="70" font-weight="bold">
+      <tspan x="0" y="126">ROOTS </tspan>
+    </text>
+  </g>
+</svg>

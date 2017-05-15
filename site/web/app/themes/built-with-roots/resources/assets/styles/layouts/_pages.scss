@@ -1,0 +1,12 @@
+.home-content {
+}
+.home-intro {
+  .img-logo {
+    margin-bottom: 30px;
+  }
+  @include media-breakpoint-up(md) {
+    max-height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}

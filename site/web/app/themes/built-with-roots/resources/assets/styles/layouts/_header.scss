@@ -4,3 +4,7 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.banner {
+  display: none;
+}

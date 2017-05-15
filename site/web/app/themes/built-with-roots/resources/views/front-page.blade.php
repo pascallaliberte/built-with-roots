@@ -8,10 +8,13 @@
           <sites></sites>
         </app>
       </div>
-      <div class="col-md-4">
-        @while(have_posts()) @php(the_post())
-          @include('partials.content-page')
-        @endwhile
+      <div class="col-md-4 home-content">
+        <div class="home-intro sticky">
+          <img src="@asset('/images/logo.svg')" class="img-fluid img-logo">
+          @while(have_posts()) @php(the_post())
+            @include('partials.content-page')
+          @endwhile
+        </div>
       </div>
     </div>
   </div>
