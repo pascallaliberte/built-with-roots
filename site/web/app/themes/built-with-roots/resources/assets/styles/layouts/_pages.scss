@@ -1,4 +1,7 @@
 .home-content {
+  @include media-breakpoint-up(md) {
+    order: 1;
+  }
 }
 .home-intro {
   .img-logo {
