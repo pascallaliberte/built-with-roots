@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-    <a v-if="site.acf.site_url" :href="site.acf.site_url" :class="imageClass">
+    <a v-if="site.acf.site_url" :href="site.acf.site_url" class="site-link" :class="imageClass">
       <img v-if="site.acf.site_screenshot_desktop" class="img-fluid site-desktop-image" :src="site.acf.site_screenshot_desktop.url">
       <span class="site-label" :class="labelClass">
         {{ siteLabel }}
@@ -30,7 +30,7 @@ export default {
     },
     labelClassTheme() {
       let c = "site-label-theme-"
-      if ((this.site.id % 2 == 0 || this.site.id % 7 == 0 || this.site.id % 11 == 0) && this.site.id % 6 != 0) {
+      if (this.site.id % 3 == 0) {
         c += "light"
       } else {
         c += "dark"
