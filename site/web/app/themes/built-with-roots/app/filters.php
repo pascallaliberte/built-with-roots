@@ -68,3 +68,21 @@ add_filter('template_include', function ($template) {
  * Tell WordPress how to find the compiled path of comments.blade.php
  */
 add_filter('comments_template', 'App\\template_path');
+
+/**
+ * Add custom admin columns for the Sites CPT
+ */
+
+add_filter('manage_edit-site_columns', function($defaults) {
+    $defaults['title'] = "URL";
+    return $defaults;
+});
+
+add_action('admin_head-edit.php', function() {
+    add_filter('the_title', function( $title, $id) {
+        if ("site" == get_post($id)->post_type) {
+            return get_post_meta( $id , 'site_url' , true );
+        }
+        return $title;
+    }, 100, 2);
+});
