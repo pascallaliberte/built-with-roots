@@ -4,7 +4,9 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-8">
-        <sites></sites>
+        <app>
+          <sites></sites>
+        </app>
       </div>
       <div class="col-md-4">
         @while(have_posts()) @php(the_post())
