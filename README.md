@@ -1,10 +1,15 @@
-# BUILT WITH ROOTS
+# Built with Roots - a fan site
 
 ![Image of the site](site/web/app/themes/built-with-roots/resources/assets/images/preview.png)
 
 Help build this fan site of sites built with [Roots][roots], the WordPress development kit of choice for making custom sites.
 
 If you just want to learn Roots, this is a good starter project too. Take it apart!
+
+Here's the presentation that was given on May 17, 2017, demoing the project:
+
+[![Undo the Mess: Use Roots for WordPress Dev](https://img.youtube.com/vi/c25nvDkblSQ/0.jpg)](https://www.youtube.com/watch?v=c25nvDkblSQ)  
+[Undo the Mess: Use Roots for WordPress Dev - May 17, 2017](https://www.youtube.com/watch?v=c25nvDkblSQ)
 
 # Requirements
 
